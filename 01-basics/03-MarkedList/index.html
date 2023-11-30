@@ -14,16 +14,14 @@
     <div id="app" style="margin-top: 2rem">
       <div class="container">
         <div class="form-group">
-          <input type="search" v-model="filter"/>
+          <input type="search" v-model="filter" />
         </div>
         <ul>
-          <li v-for="{email, className} in markedList" :key="email" :class="className">
-            {{ email }}
-          </li>
+          <li v-for="{email, className} in markedList" :key="email" :class="className">{{ email }}</li>
         </ul>
       </div>
     </div>
 
-    <script type="module" src='script.ts'></script>
+    <script type="module" src="script.ts"></script>
   </body>
 </html>
